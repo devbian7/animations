@@ -40,8 +40,17 @@ class MainActivity : AppCompatActivity() {
                     textView.startAnimation(animationFadeIn)
                 }
             }
+            fixedRateTimer("timer",false,700,700){
+                this@MainActivity.runOnUiThread {
+                    textView2.startAnimation(animationFadeIn)
+                }
+            }//hola
+            fixedRateTimer("timer",false,1400,700){
+                this@MainActivity.runOnUiThread {
+                    textView3.startAnimation(animationFadeIn)
+                }
+            }
         }
-        //hola
         fadeOut.setOnClickListener {
             val animationFadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out)
             textView.startAnimation(animationFadeOut)
