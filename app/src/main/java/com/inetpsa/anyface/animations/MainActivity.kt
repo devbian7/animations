@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 this@MainActivity.runOnUiThread {
                     textView2.startAnimation(animationFadeIn)
                 }
-            }//hola
+            }
             fixedRateTimer("timer",false,1400,700){
                 this@MainActivity.runOnUiThread {
                     textView3.startAnimation(animationFadeIn)
